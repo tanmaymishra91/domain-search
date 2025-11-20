@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://aozoradesu.com/wp-content/uploads/2025/09/Aozora.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="hero-title">Find your perfect domain name</h1>
+            <p class="hero-subtitle">Enter your ideal domain name below to check availability.</p>
+
+            <div class="search-container">
+                <div class="search-bar-wrapper">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text" id="domain-input" placeholder="example.com" autocomplete="off">
+                    <button id="search-btn">Search</button>
+                </div>
+
+                <!-- Loading State -->
+                <div id="loading-indicator" class="hidden">
+                    <div class="spinner"></div>
+                    <span>Checking availability...</span>
+                </div>
+            </div>
+
+            <!-- Results Area -->
+            <div id="results-area" class="hidden">
+                <!-- Results will be injected here -->
+            </div>
+
+            <div class="popular-extensions">
+                <span>Popular:</span>
+                <span class="tag">.com</span>
+                <span class="tag">.io</span>
+                <span class="tag">.co</span>
+                <span class="tag">.net</span>
+                <span class="tag">.ai</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
